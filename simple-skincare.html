@@ -5,98 +5,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Skincare Routine</title>
     <style>
-      body {
-        background-color: #ffe8e7;
+      h1,
+      h2,
+      p,
+      a,
+      .morning-routine,
+      .evening-routine,
+      .skincare-importance {
+        text-align: center;
       }
+
       h1,
       h2 {
-        text-align: center;
         font-family: "Courier New", Courier, monospace;
         font-weight: lighter;
+        color: #333333;
       }
-      h1 {
-        font-size: 36px;
-      }
-      img {
-        display: block;
+
+      h3,
+      img,
+      a,
+      button,
+      .skincare-importance {
         margin: 0 auto;
-        width: 400px;
-        border: 5px #92a8d1;
-        border-radius: 15px;
       }
       h3 {
         font-family: Helvetica, Arial, sans-serif;
         font-size: 24px;
         font-weight: bold;
+        padding: 10px 20px;
       }
-      p {
-        text-align: center;
+
+      img,
+      .morning-routine,
+      .evening-routine,
+      ul,
+      button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+
+      img,
+      a,
+      button,
+      .content {
+        display: block;
+      }
+
+      button,
+      button:hover {
+        color: #ffffff;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+      img {
+        width: 450px;
+        height: 275px;
+        border: 5px #92a8d1;
+        border-radius: 15px;
       }
       ul {
         list-style-type: none;
-        margin: 0 auto;
-        padding: 0;
+      }
+      p {
+        font-size: 18px;
+        color: #333333;
+        font-family: "Courier New", Courier, monospace;
+      }
+      a {
+        padding: 10px 20px;
+      }
+
+      button {
+        background: #2a4d69;
+        font-size: 20px;
+        padding: 15px 20px;
+        border-radius: 30px;
+        border: none;
+        box-shadow: 1px 2px 2px rgb(130, 129, 129);
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #333333;
+      }
+      .content {
+        background-image: linear-gradient(to right, #fbc4c3, #ffe8e7);
+        box-sizing: border-box;
+        width: 60%;
+        padding: 30px;
+        border-radius: 10px;
+        margin: 30px auto;
       }
       .morning-routine,
       .evening-routine {
         background-color: #fff4f3f5;
-        text-align: center;
-        color: #696864;
+        color: #2a4d69;
+        border-radius: 20px;
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 5px 10px;
       }
       .morning-steps,
       .evening-steps {
-        color: #696864;
+        padding: 2px 3px;
+        font-size: 20px;
+      }
+      .skincare-importance {
+        font-size: 24px;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: lighter;
+        padding: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      .highlight {
+        font-style: oblique;
       }
     </style>
   </head>
   <body>
-    <h1>Skincare Routine</h1>
-    <h2><em>Radiant Skin Awaits</em></h2>
-    <img
-      src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1170104811.jpeg?resize=1200:*"
-      alt="Skincare Morning"
-    />
-    <div class="morning-routine">
-      <h3>Morning</h3>
-      <ul class="morning-steps">
-        <li>Gentle Cleanser</li>
-        <li>Vitamin C Serum</li>
-        <li>Hyaluronic Acid Serum</li>
-        <li>Eye Cream</li>
-        <li>Moisturizer</li>
-        <li>Sunscreen</li>
-      </ul>
-    </div>
-    <img
-      src="https://skinkraft.com/cdn/shop/articles/Night-Skin-Care_1024x400.jpg?v=1595654248"
-      alt="Skincare Evening"
-    />
-    <div class="evening-routine">
-      <h3>Evening</h3>
-      <ul class="evening-steps">
-        <li>Gentle Cleanser</li>
-        <li>Retinol or Retinoid</li>
-        <li>Eye Cream</li>
-        <li>Moisturizer</li>
-        <li>Optional: Facial Oil</li>
-      </ul>
-    </div>
+    <div class="content">
+      <h1>Skincare Routine</h1>
+      <h2><em>Radiant Skin Awaits</em></h2>
+      <img
+        src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1170104811.jpeg?resize=1200:*"
+        alt="Skincare Morning"
+      />
+      <div class="morning-routine">
+        <h3>Morning</h3>
+        <ul class="morning-steps">
+          <li>Gentle Cleanser</li>
+          <li>Vitamin C Serum</li>
+          <li>Hyaluronic Acid Serum</li>
+          <li>Eye Cream</li>
+          <li>Moisturizer</li>
+          <li>Sunscreen</li>
+        </ul>
+      </div>
+      <img
+        src="https://skinkraft.com/cdn/shop/articles/Night-Skin-Care_1024x400.jpg?v=1595654248"
+        alt="Skincare Evening"
+      />
+      <div class="evening-routine">
+        <h3>Evening</h3>
+        <ul class="evening-steps">
+          <li>Gentle Cleanser</li>
+          <li>Retinol or Retinoid</li>
+          <li>Eye Cream</li>
+          <li>Moisturizer</li>
+          <li>Optional: Facial Oil</li>
+        </ul>
+      </div>
 
-    <p class="skincare-importance">
-      Skincare is a range of practices that
-      <span class="highlight">support</span> skin integrity,
-      <span class="highlight">enhances</span> its appearance, and
-      <span class="highlight">relieve</span> skin conditions. <br />They can
-      include nutrition, avoidance of excessive sun exposure, and appropriate
-      use of emoillents.
-    </p>
-    <a
-      href="https://en.wikipedia.org/wiki/Skin_care#:~:text=Skin%20care%20or%20skincare%20is,and%20appropriate%20use%20of%20emollients."
-      ><strong>Visit Wikipedia</strong></a
-    >
-    <hr />
+      <p class="skincare-importance">
+        Skincare is a range of practices that
+        <span class="highlight">support</span> skin integrity,
+        <span class="highlight">enhances</span> its appearance, and
+        <span class="highlight">relieve</span> skin conditions. <br />They can
+        include nutrition, avoidance of excessive sun exposure, and appropriate
+        use of emoillents.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Skin_care#:~:text=Skin%20care%20or%20skincare%20is,and%20appropriate%20use%20of%20emollients."
+        ><strong>Visit Wikipedia</strong></a
+      >
+      <hr />
 
-    <button>Get Additional Skincare Information</button>
-    <p>Coded By Kristina Palmer</p>
+      <button>Get Additional Skincare Information</button>
+      <p>Coded By Kristina Palmer</p>
+    </div>
+    <script>
+      function updateButtonText(newText) {
+        let buttonText = document.querySelector("button");
+        buttonText.innerHTML = newText;
+      }
+
+      function canProvideInfo() {
+        let skincareAnswer = prompt("Hi! Do you have any skincare allergies?");
+        skincareAnswer = skincareAnswer.toLowerCase().trim();
+        return skincareAnswer === "no";
+      }
+
+      function getUserInfo() {
+        let userName = prompt("What is your first name?");
+        userName = userName.trim();
+        let email = prompt("What is your email address?");
+
+        if (canProvideInfo()) {
+          updateButtonText(
+            `Hi, ${userName}! Look in your inbox for additional skincare tips!`
+          );
+        } else {
+          updateButtonText(
+            `Sorry, ${userName}! Due to allergies, we recommend consulting with a medical professional.`
+          );
+        }
+      }
+      let getInfoButton = document.querySelector("button");
+      getInfoButton.addEventListener("click", getUserInfo);
+    </script>
   </body>
 </html>
